@@ -29,7 +29,7 @@ const useNewsList = () => {
   }, [loader, services, dispatch]);
 
   const handleNavigationNetwork = useCallback(() => {
-    navigation.navigate(Screen.NETWORK_CHECK);
+    console.log('Screen.NETWORK_CHECK clicked');
   }, [navigation]);
 
   const handleNavigationNewsItem = useCallback(
