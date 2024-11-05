@@ -1,0 +1,1 @@
+/Users/tejas/Documents/Tejas/React-Native/rn_boilerplate/android/app/build/intermediates/cxx/Debug/4838352c/obj/x86
