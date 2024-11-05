@@ -50,5 +50,8 @@
     "password": "Password",
     "confirmPassword": "Confirm Password",
     "signUp": "SignUp"
+  },
+  "offline":{
+    "youAreOffline":"You are offline"
   }
 }

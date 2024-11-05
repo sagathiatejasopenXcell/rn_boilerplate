@@ -4,7 +4,12 @@ import { IndicatorView } from "@app/blueprints";
 import { NavigationContainer } from "@react-navigation/native";
 import { Provider } from "react-redux";
 
-import { LocalizationProvider, ThemeProvider } from "./context";
+import {
+  LocalizationProvider,
+  ThemeProvider,
+  NetworkProvider,
+} from "./context";
+import { OfflineBanner } from "@src/components";
 import { AppNavigation, navigationRef } from "./navigation/AppNavigation";
 import store from "./store";
 import { loader } from "./utils";
@@ -15,7 +20,10 @@ export const MainApp = () => {
       <ThemeProvider>
         <LocalizationProvider>
           <NavigationContainer ref={navigationRef}>
-            <AppNavigation />
+            <NetworkProvider>
+              <AppNavigation />
+              <OfflineBanner />
+            </NetworkProvider>
             <IndicatorView isLoading={false} ref={loader} />
           </NavigationContainer>
         </LocalizationProvider>

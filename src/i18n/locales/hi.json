@@ -26,5 +26,8 @@
     "languages": "भाषा",
     "settingScreen": "स्क्रीन सेट करना",
     "theme": "विषय-वस्तु"
+  },
+  "offline":{
+    "youAreOffline":"आप संपर्क में नहीं हैं"
   }
 }
