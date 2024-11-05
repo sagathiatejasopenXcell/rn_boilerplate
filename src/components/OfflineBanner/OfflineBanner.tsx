@@ -10,7 +10,7 @@ export const OfflineBanner = () => {
   const { color } = useColor();
   const styles = offlineBannerStyles(color);
 
-  if (!isConnected) return null;
+  if (isConnected) return null;
 
   return (
     <View style={styles.banner}>
